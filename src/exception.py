@@ -13,9 +13,9 @@ def error_msg_detail(error,error_detail:sys):
     return error_msg
     
 class CustomException(Exception):
-    def __init__(self,error_msg,error_details:sys):
+    def __init__(self,error_msg,error_detail:sys):
         super().__init__(error_msg)
-        self.error_msg = error_msg_detail(error_msg,error_detail=error_details)
+        self.error_msg = error_msg_detail(error_msg,error_detail=error_detail)
         
     def __str__(self):
         return self.error_msg
