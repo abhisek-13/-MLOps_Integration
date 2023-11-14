@@ -1,5 +1,5 @@
 import sys # if exception occurs then sys module have the inforamtion directly
-import logging
+from src.logger import logging
 
 
 def error_msg_detail(error,error_detail:sys):
@@ -19,4 +19,3 @@ class CustomException(Exception):
         
     def __str__(self):
         return self.error_msg
-    
